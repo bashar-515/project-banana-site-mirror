@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Banana</title>
+    <link rel="icon" href="data:," />
+    <style>
+      a:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>About</h3>
+
+    <p>
+      <i>Project Banana</i> is a no-frills live video chat app that boasts an
+      emphasis on simplicity and privacy: no accounts, no downloads—just an easy
+      way to connect with your favorite friend(s). Create a room, share it with
+      someone, and you'll be well on your way to chatting with them using
+      internet magic!
+    </p>
+
+    <h3>Stack</h3>
+
+    <p>
+      Under the hood, Project banana uses WebRTC and custom signaling logic to
+      efficiently form a peer-to-peer connection between clients. The backend
+      consists of a Go server listening for ICE candidates and session
+      descriptions via gRPC—forwarding them to peers over a WebSocket
+      connection. The entire setup is deployed on Docker containers and runs on
+      a Raspberry Pi located in my bedroom, and I'm using
+      <a href="https://www.noip.com">No-IP</a> to manage my dynamic IP address.
+      The app's frontend is served using GitHub Pages. Check out the source code
+      <a href="https://codeberg.org/project-banana/app" target="_blank"
+        >here</a
+      >.
+    </p>
+
+    <p>
+      <a href="${PROJECT_BANANA_APP_URL}">Try It Now</a>
+    </p>
+  </body>
+</html>
